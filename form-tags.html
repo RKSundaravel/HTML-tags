@@ -12,9 +12,11 @@ and open the template in the editor.
     </head>
     <body>
         <header>This is header</header>
+        
+        
     <form method="get">
         <label>Name:
-             <input type="submitted name" accomplete="name"\>
+             <input name="submitted name" accomplete="name"\>
         </label>
         </form>    
     <form method="get">
@@ -25,8 +27,22 @@ and open the template in the editor.
         <form method="post">
             <label> <input type="radio" value="yes">yes</label>
             <label> <input type="radio" value="No">No</label>
+            <input type="radio" name="may be" id="may be"><label>may be</label>
     </form>
-        <footer>This is footer</footer>
+        
+        <form id="Gender-form">
+  <label for="gender-select">Choose your gender</label>
+  <select name="gender" id="gender-select">
+    <option value="male">male</option>
+    <option value="female">female</option>
+    <option value="others">others</option>
+  </select>
+  
+  <form id="age"></form>
+  <label>Above 18</label><input type="checkbox" id="above18">
+  <label>Below 18</label><input type="checkbox" id="below18">
+  
+     <footer>This is footer</footer>
         
     </body>
 </html>
