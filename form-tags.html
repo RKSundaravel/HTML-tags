@@ -42,6 +42,15 @@ and open the template in the editor.
   <label>Above 18</label><input type="checkbox" id="above18">
   <label>Below 18</label><input type="checkbox" id="below18">
   
+  <form oninput="total.value=parseInt(ei.value)+parseInt(vi.value)">
+  No. of Electronic instruments:
+  <input type="number" id="ei" value="0"><br>
+  No. of Vintage instruments: 
+  <input type="number" id="vi" value="0"><br>
+  Total no. of Instruments :
+  <output name="total" for="total"></output>
+</form>
+  
      <footer>This is footer</footer>
         
     </body>
