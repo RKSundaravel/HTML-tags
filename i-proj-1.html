@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
+        <header id="header">
             <h1>Frame work</h1>
             <h4>html layouts</h4>
 
@@ -20,68 +20,80 @@ and open the template in the editor.
             <h5>TEMPLATES</h5>
             <h5>CONTACTS</h5>
         </header>
-        <section>
-            <h5>TYPE1</h5>
-            <h5>TYPE2</h5>
-            <h5>TYPE3</h5>
-            <h5> I got it !</h5>
-        </section>
-        <div>
-            <h2>Archives</h2>
-            <h5> Check out the posts grouped by it's categories below</h5> 
-            <h4>Image list1</h4>   
-            <a href="F:\intern projects\HTML-tags-1\images.jpg">View more posts</a>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image1</figcaption>
-            </figure>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image2</figcaption>
-            </figure>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image3</figcaption>
-            </figure>
-        </div>
-        <div>
-            <h4>Image list2</h4>
-            <a href="F:\intern projects\HTML-tags-1\images.jpg">View more posts</a>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image1</figcaption>
-            </figure>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image2</figcaption>
-            </figure>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image3</figcaption>
-            </figure>
-        </div>
-        <div>
-            <h4>Image list3</h4>
-            <a href="F:\intern projects\HTML-tags-1\images.jpg">View more posts</a>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image1</figcaption>
-            </figure>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image2</figcaption>
-            </figure>
-            <figure>
-                <img src="F:\intern projects\HTML-tags-1\images.jpg">
-                <figcaption>image3</figcaption>
-            </figure>
-        </div>
-        <form>
-            <h3>Email</h3>
-            <p>You can login here</p>
-            <input type="text" value="Enter your name">
-            <input type="email" value="Enter your mail-id">
-            <button type="submit" name="submit">submit</button>
-        </form>
+        <nav class="menu">
+            <ul>
+                <li><a href="#header">header</a></li>
+                <li><a href="#main">main</a></li>
+                <li><a href="#aside">aside</a></li>
+                <li><a href="#footer">footer</a></li>
+            </ul>
+            <li><a href="https://developer.mozilla.org/en-US/">go to mdn!</a></li>
+        </nav>
+        <main id="main">
+            <div>
+                <h2>Archives</h2>
+                <h5> Check out the posts grouped by it's categories below</h5> 
+                <h4 id="il1">Image list1</h4>   
+                <a href="#il2" title>View more posts</a>
+                <figure>
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image1 Match stick with fire" type="" srcset="images.jpg 5x"/>
+                    <figcaption>image1</figcaption>
+                </figure>
+                <figure>
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image2 Match stick with fire" srcset="images.jpg 1400w,images.jpg 600w,images.jpg 1000w"/>
+                    <figcaption>image2</figcaption>
+                </figure>
+                <picture>
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image3 Match stick with fire"/>
+                    <figcaption>image3</figcaption>
+                </picture>
+            </div>
+            <div>
+                <h4 id="il2">Image list2</h4>
+                <a href="#il3">View more posts</a>
+                <figure>
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image4 fire stick with fire"/>
+                    <figcaption>image1</figcaption>
+                </figure>
+                <figure>
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image5 fire stick with fire"/>
+                    <figcaption>image2</figcaption>
+                </figure>
+                <figure>
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image6 fire stick with fire"/>
+                    <figcaption>image3</figcaption>
+                </figure>
+            </div>
+            <div>
+                <h4 id="il3">Image list3</h4>
+                <a href="#il1">View more posts</a>
+                <figure>
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image7 fire stick with fire"/>
+                    <figcaption>image1</figcaption>
+                </figure>
+                <figure align="center">
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image8 fire stick with fire"/>
+                    <figcaption>image2</figcaption>
+                </figure>
+                <figure>
+                    <img  src="F:\intern projects\HTML-tags-1\images.jpg" alt="Image9 fire stick with fire"/>
+                    <figcaption>image3</figcaption>
+                </figure>
+            </div>
+        </main>
+        <aside id="aside">
+            <form>
+                <h3>Email</h3>
+                <p>You can login here</p>
+                <input type="text" value="Enter your name"> 
+                <br />
+                <input type="email" value="Enter your mail-id"> 
+                <br />
+                <button type="submit" name="submit">submit</button>
+            </form>
+        </aside>
+        <footer id="footer">
+            <p align="center">This is a sample template created on (4/5/2023)</p>
+        </footer>
     </body>
 </html>
