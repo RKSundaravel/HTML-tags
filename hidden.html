@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hidden Demo</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            <div>
+                <label for="title">Post title:</label>
+                <input type="text" id="title" name="title" value="My excellent blog post" />
+            </div>
+            <div>
+                <label for="content">Post content:</label>
+                <textarea id="content" name="content" cols="60" rows="5">
+This is the content of my excellent blog post. I hope you enjoy it!
+                </textarea>
+            </div>
+            <div>
+                <button type="submit">Update post</button>
+            </div>
+            <input hidden="" type="hidden" id="postId" name="postId" value="34657" />
+        </form>
+
+    </body>
+</html>
