@@ -12,46 +12,40 @@ and open the template in the editor.
     </head>
     <body>
         <header>This is header</header>
-        
-        
-    <form method="get">
-        <label>Name:
-             <input name="submitted name" accomplete="name"\>
-        </label>
-        </form>    
-    <form method="get">
-        <label>Age:
-            <input name="submitted age" accomplete="age"\>
-        </label> 
-    </form>
-        <form method="post">
-            <label> <input type="radio" value="yes">yes</label>
-            <label> <input type="radio" value="No">No</label>
-            <input type="radio" name="may be" id="may be"><label>may be</label>
-    </form>
-        
-        <form id="Gender-form">
-  <label for="gender-select">Choose your gender</label>
-  <select name="gender" id="gender-select">
-    <option value="male">male</option>
-    <option value="female">female</option>
-    <option value="others">others</option>
-  </select>
-  
-  <form id="age"></form>
-  <label>Above 18</label><input type="checkbox" id="above18">
-  <label>Below 18</label><input type="checkbox" id="below18">
-  
-  <form oninput="total.value=parseInt(ei.value)+parseInt(vi.value)">
-  No. of Electronic instruments:
-  <input type="number" id="ei" value="0"><br>
-  No. of Vintage instruments: 
-  <input type="number" id="vi" value="0"><br>
-  Total no. of Instruments :
-  <output name="total" for="total"></output>
-</form>
-  
-     <footer>This is footer</footer>
-        
+        <main>
+            <form method="get">
+                <label>Name:
+                    <input name="submitted name" type="button" value="enter"/>
+                </label>
+            </form>    
+            <form method="get">
+                <label>Age:
+                    <input name="submitted age" type="submit"/>
+                </label> 
+            </form>
+            <form method="post">
+                <label> <input type="radio" value="yes">yes</label>
+                <label> <input type="radio" value="No">No</label>
+                <input type="radio" name="may be" id="maybe"><label>may be</label>
+            </form>
+            <form oninput="total.value=parseInt(ei.value)+parseInt(vi.value)">
+                No. of Electronic instruments:
+                <input type="number" id="ei" value="0"><br>
+                No. of Vintage instruments: 
+                <input type="number" id="vi" value="0"><br>
+                Total no. of Instruments :
+                <output name="total" for="total"></output>
+            </form>
+            <div>
+                <label for="username">Your Name:</label><input type="text" id="username"/>
+
+                <input type="range" id="b" name="b" value="50" /> +
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">60</output>
+
+            </div>
+        </main>
+        <footer>This is footer</footer>
+
     </body>
 </html>
