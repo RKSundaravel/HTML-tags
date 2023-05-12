@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>WORD DEMO</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+    </head>
+    <body>
+        <div class="ws"> This is a WORD SPACING example</div>
+        <div>
+            <p><u>word break</u></p>
+            <p>1.word-break:normal</p>    
+            <p class="norm box">SelectthetextthatyouwanttochangeSelectthetextthatyouwanttochangeSelectthetextthatyouwanttochange
+                SelectthetextthatyouwanttochangeSelectthetextthatyouwanttochangeSelectthetextthatyouwanttochange
+            </p>
+            <p>2.word-break:break all</p>    
+            <p class="breakall box">NSelectthetextthatyouwanttochange   SelectthetextthatyouwanttochangeSelectthetextthatyouwanttochange
+                SelectthetextthatyouwanttochangeSelectthetextthatyouwanttochangeSelectthetextthatyouwanttochange
+            </p>
+            <p>3.word-break:keep all</p>    
+            <p class="keepall box">Selectthetextthatyouwanttochange   SelectthetextthatyouwanttochangeSelectthetextthatyouwanttochange
+                SelectthetextthatyouwanttochangeSelectthetextthatyouwanttochangeSelectthetextthatyouwanttochange
+            </p>
+            <p>4.word-break:break word</p>    
+            <p class="breakword box">Selectthetextthatyouwanttochange   SelectthetextthatyouwanttochangeSelectthetextthatyouwanttochange
+                SelectthetextthatyouwanttochangeSelectthetextthatyouwanttochangeSelectthetextthatyouwanttochange
+            </p>
+        </div>
+        <div>
+           <p><u>white space</u></p>
+            <p>1.normal</p>
+            <p class="nor box">Sequences of white space are collapsed. 
+            Newline characters in the source are handled 
+            the same as other white space. Lines are 
+            broken as necessary to fill line boxes.</p>
+            <p>2.now rap</p>
+            <p class="nrap box">Sequences of white space are collapsed. 
+            Newline characters in the source are handled 
+            the same as other white space. Lines are 
+            broken as necessary to fill line boxes.</p>
+            <p>3.pre</p>
+            <p class="pre box">Sequences of white space are collapsed. 
+            Newline characters in the source are handled 
+            the same as other white space. Lines are 
+            broken as necessary to fill line boxes.</p>
+            <p>4.pre wrap</p>
+            <p class="prewrap box">Sequences of white space are collapsed. 
+            Newline characters in the source are handled 
+            the same as other white space. Lines are 
+            broken as necessary to fill line boxes.</p>
+            <p>5.pre line</p>
+            <p class="preline box">Sequences of white space are collapsed. 
+            Newline characters in the source are handled 
+            the same as other white space. Lines are 
+            broken as necessary to fill line boxes.</p>
+            <p>6.break spaces</p>
+            <p class="breakspaces box">Sequences of white space are collapsed. 
+            Newline characters in the source are handled 
+            the same as other white space. Lines are 
+            broken as necessary to fill line boxes.</p>
+        </div>
+        <div>
+            <p>Writting mode</p>
+            <table >
+                <tr>
+                    <td>horizontal tab</td>
+                    <td class="htab">1 2 3</td>
+                    <td>1 2 3</td>
+                </tr>
+                <tr>
+                    <td>vertical tab l-r</td>
+                    <td class="vtablr">1 2 3 check</td>
+                    <td>1 2 3</td>
+                </tr>
+                <tr>
+                    <td>vertical tab r-l</td>
+                    <td class="vtabrl">1 2 3 check</td>
+                    <td>1 2 3</td>
+                </tr>
+            </table>
+        </div>
+        <div class="wrap box">
+            <div class="box1 box">"Box1"</div>
+            <div class="box2 box">"Box2"</div>
+            <div class="box3 box">"Box3"</div>
+        </div>
+        <div>
+            <p><u>Text overflow</u></p>
+            <pre>clip</pre>
+            <p id="pbox" class="cli line">Sequences of white space are collapsed. 
+                Newline characters in the source are handled 
+                the same as other white space. Lines are 
+                broken as necessary to fill line boxes.
+
+            </p>
+            <pre>Ellipsis</pre>
+            <p id="pbox" class="eli line">Sequences of white space are collapsed. 
+                Newline characters in the source are handled 
+                the same as other white space. Lines are 
+                broken as necessary to fill line boxes.
+
+            </p>
+        </div>
+    </body>
+</html>    

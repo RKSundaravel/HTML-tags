@@ -1,0 +1,93 @@
+body{
+    background-color: #12dfdf;
+}
+.ws{
+    word-spacing: 40px;
+}
+.box
+{
+    padding: 10px;
+    border: 1px solid;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.norm{
+    word-break: normal;
+}
+.breakall{
+    word-break: break-all;
+}
+.keepall{
+    word-break: keep-all;
+}
+.breakword{
+    word-break: break-word;
+}
+.nor{
+    white-space: normal;
+}
+.nrap{
+    white-space: nowrap;
+}
+.pre{
+    white-space:pre;
+}
+.prewrap{
+    white-space: pre-wrap;
+}
+.preline{
+    white-space:pre-line;
+}
+.breakspaces{
+    white-space:break-spaces;
+}
+.htab{
+    writing-mode: horizontal-tb;
+}
+.vtablr{
+    writing-mode:vertical-lr;
+}
+.vtabrl{
+    writing-mode:vertical-rl;
+}
+.wrap{
+    position: relative;
+}
+.box1{
+    z-index: 1;
+    position: relative;
+    background-color: blue;
+}
+.box2{
+    z-index: 2;
+    position: relative;
+    background-color:chocolate;
+    left:60px;
+    top:-20px;
+}
+.box3{
+    z-index: 7;
+    position:relative;
+    background-color:crimson;
+    left:90px;
+    top:-40px;
+}
+#pbox{
+    border: 2px solid black;
+    white-space: normal;
+    width: 200px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.cli{
+    text-overflow: clip;
+}
+.eli{
+    text-overflow:ellipsis;
+}
+
