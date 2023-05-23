@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <h1>1.attribute selectors</h1>
+            <div>
+                <ul>
+                    <li>Item 1</li>
+                    <li class="a">Item 2</li>
+                    <li class="a b">Item 3</li>
+                    <li class="b">Item 4</li>
+                </ul>
+            </div>
+            <div>
+                <h1>2.Attribute substring matching selectors</h1>
+                <ul>
+                    <li class="a">Item 1</li>
+                    <li class="ab">Item 2</li>
+                    <li class="bca">Item 3</li>
+                    <li class="bcabc">Item 4</li>
+                </ul>
+            </div>
+            <div>
+                <h1>3.Combinators</h1>
+                    <ul class="parent">
+                    <li class="child">Item 1</li>
+                    </ul>
+                    <p class="one first">Item 2</p>
+                    <div class="two">Item 3<p>HI</p></div>
+                    <p class="three">Item 4</p>
+                    <p class="four">Item5</p>
+            </div>
+            <div class="parent1">
+                    <h1>4. using : class selectors</h1>
+                    <button class="click">Click</button>
+                    <ul class="child1">
+                    <li class="sub-child1">Item 1</li>
+                    </ul>
+                    <p class="">Item 2</p>
+                    <div class="child2">Item 3<p>HI</p></div>
+                    <p class="child3">Item 4</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before">Link</a>
+            </div>
+
+        </section>
+    </main>
+</body>
