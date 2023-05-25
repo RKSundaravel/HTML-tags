@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 .container{
-    background-image: url("../image/banner/background-image.jpg");
+    background-image: url("../../assets/image/banner/background-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -12,8 +12,8 @@ body {
     margin:0 auto;
 }
 .product-content {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
