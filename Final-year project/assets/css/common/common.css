@@ -1,0 +1,49 @@
+.fontstyle-italics{
+    font-style: italic;
+}
+.fontweight-bold{
+    font-weight: bold;
+}
+.text-color{
+    Color:#0061f2;
+}
+
+.padd-1-topbottom{
+    padding: 5px 0;
+}
+.padd-2-topbottom{
+    padding: 15px 0;
+}
+.padd-1-rightleft{
+    padding: 0 5px;
+}
+.padd-2-rightleft{
+    padding: 0 15px;
+}
+.margin-1-topbottom{
+    margin: 5px 0;
+}
+.margin-2-topbottom{
+    margin: 15px 0;
+}
+.margin-1-rightleft{
+    margin: 0 5px;
+}
+.margin-2-rightleft{
+    margin: 0 15px;
+}
+.border-thin{
+    border: 1px thin #000000;
+}
+.text-align-left{
+    text-align: left;
+}
+.text-align-right{
+    text-align:right;
+}
+.text-align-center{
+    text-align: center;
+}
+.dec{
+    text-decoration-line: none;
+}

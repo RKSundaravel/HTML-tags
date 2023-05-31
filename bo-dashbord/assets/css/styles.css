@@ -1,0 +1,37 @@
+@import url("../css/common/common.css");
+@import url("../css/box/box.css");
+@import url("../css/button/button.css");
+@import url("../css/display/display.css");
+@import url("../css/input/input.css");
+body{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../font/Raleway-Light/Raleway-Regular.ttf") format("truetype"),url("../font/Aller-Lt/Aller_Lt.ttf") format("truetype");
+}
+* {
+    font-family: Raleway-Regular,var(--font-fallback);
+}
+:root{
+    --font-fallback: Aller-Lt;
+    --main-bgcolor:#0061f2;
+    --sub-bgcolor:#ffffff;
+}
+.bgcolor-blue{
+    background-color: var(--main-bgcolor);
+}
+.bgcolor-white{
+    background-color: var(--sub-bgcolor);
+}
+.bg-imagefix{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-heightfix{
+    height:100vh;
+}
+.center-element{
+    margin: 0 auto;
+}

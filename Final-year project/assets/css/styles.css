@@ -1,0 +1,156 @@
+@import url("../css/common/common.css");
+@import url("../css/box/box.css");
+@import url("../css/button/button.css");
+@import url("../css/display/display.css");
+@import url("../css/input/input.css");
+body{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../font/Raleway-Light/Raleway-Regular.ttf") format("truetype");
+}
+* {
+    font-family: Raleway-Regular;
+}
+:root{
+    --main-bgcolor:#0061f2;
+    --sub-bgcolor:#ffffff;
+}
+.bgcolor-blue{
+    background-color: var(--main-bgcolor);
+}
+.bgcolor-white{
+    background-color: var(--sub-bgcolor);
+}
+.bg-imagefix{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-heightfix{
+    height:100vh;
+}
+.center-element{
+    margin: 0 auto;
+}
+
+/*Product page*/
+header{
+    text-align:center;
+    position:fixed;
+    background-color: #ffffff;
+    width:100%;
+    height:fit-content;
+    z-index:1;
+}
+.h{
+    font-size: 30px;
+    color: #0b3b0b;
+    font-weight: bolder;
+}
+.container{
+    background-image: url("../../assets/image/banner/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.container-size{
+    width:1400px;
+}
+.sidenav {
+    height:560px; 
+    width: 320px; 
+    position: fixed; 
+    z-index: 3; 
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #103369;
+  }
+
+.product-content {
+    padding-top: 150px;
+    margin-left: 320px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.product-card {
+    margin: 10px;
+    background-color: #ffffff;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    padding: 10px;
+}
+
+.offer-sale {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    background: #f2a2189d;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.image-container {
+    height: 250px;
+    width:250px;
+    background-color: #b7c7c7;
+}
+
+.product-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.image-description {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 15px;
+}
+
+.price {
+    text-align: center;
+    font-size: 15px;
+}
+
+.offer {
+    text-decoration: line-through;
+    color: #747677;
+    text-align: center;
+}
+.add-to-cart {
+    background-color: #eb8b1d;
+    padding: 7px;
+    font-size: 15px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    border:none;
+    border-radius: 5px;
+}
+.add-to-cart:hover{
+    font-weight: bolder;
+}
+.add-to-cart:active{
+    box-shadow: 2px 2px 2px #111;
+}   
+
