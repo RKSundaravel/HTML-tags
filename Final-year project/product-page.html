@@ -12,123 +12,245 @@ and open the template in the editor.
     <title> PRODUCT PAGE</title>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="icon" href="assets/image/logo/brand-logo.png">
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
-    <header class="main-h">
+    <header>
         <div class="h">
-            <p><img src="assets/image/logo/brand-logo.png">Men's Foot Wear</p>
+            <p><img class="title" src="assets/image/logo/brand-logo.png">Men's Foot Wear
+                <a class="cart" href=""><img src="assets/image/icons/cart.png"></a>
+            </p>
         </div>
     </header>
     <main>
-        <section class="container">
-            <div class="container-size">
-                <section class="sidenav">
-                    <a href="file:///F:/my%20projects/HTML-tags-1/Final-year%20project/product-page.html?">Home</a>
-                    <a href="file:///F:/my%20projects/HTML-tags-1/Final-year%20project/about_us.html">About Us</a>
-                    <a href="file:///F:/my%20projects/HTML-tags-1/Final-year%20project/contact_us.html">Contact Us</a>
-                </section>
-                <div class="product-content">
-                    <div class="product-card">
-                        <div class="offer-sale">Offer-Sale!</div>
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/sports-shoe1.png" alt="Product Image" />
+        <section class="sidenav">
+            <a href="file:///F:/my%20projects/HTML-tags-1/Final-year%20project/product-page.html?">Home</a>
+            <a href="file:///F:/my%20projects/HTML-tags-1/Final-year%20project/about_us.html">About Us</a>
+            <a href="file:///F:/my%20projects/HTML-tags-1/Final-year%20project/contact_us.html">Contact Us</a>
+        </section>
+        <div class="container">
+            <div class="tab_container">
+                <ul class="button_container">
+                    <li class="tab-btn" data-tab-target="#shoes">SHOES</li>
+                    <li class="tab-btn" data-tab-target="#slippers">SLIPPERS</li>
+                </ul>
+
+                <div class="content_container">
+                    <div id="shoes" class="product-content" data-tab-content>
+                        <div class="product-card">
+                            <div class="offer-sale">Offer-Sale!</div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/sports-shoe1.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Sports shoe single product</p>
+                            <p class="price"><span class="offer">$50</span>$40</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                        <p class="image-description">Sports shoe single product</p>
-                        <p class="price"><span class="offer">$50</span>$40</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
+                        <div class="product-card">
+                            <div class="offer-sale"> Offer Sale! </div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/formal-shoe1.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Formal shoe single product</p>
+                            <p class="price"><span class="offer">$60 </span>50$</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/casual-shoe1.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Casual shoe single product</p>
+                            <p class="price">$30</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="offer-sale">Offer-Sale!</div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/sports-shoe2.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Sports shoe single product</p>
+                            <p class="price"><span class="offer">$50</span>$40</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="offer-sale"> Offer Sale! </div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/formal-shoe2.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Formal shoe single product</p>
+                            <p class="price"><span class="offer">$60 </span>50$</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/casual-shoe2.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Casual shoe single product</p>
+                            <p class="price">$30</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="offer-sale">Offer-Sale!</div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/sports-shoe3.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Sports shoe single product</p>
+                            <p class="price"><span class="offer">$50</span>$40</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="offer-sale"> Offer Sale! </div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/formal-shoe3.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Formal shoe single product</p>
+                            <p class="price"><span class="offer">$60 </span>50$</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/casual-shoe3.png"
+                                    alt="Product Image" />
+                            </div>
+                            <p class="image-description">Casual shoe single product</p>
+                            <p class="price">$30</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <div class="offer-sale"> Offer Sale! </div>
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/formal-shoe1.png" alt="Product Image" />
+
+
+                    <div id="slippers" class="product-content" data-tab-content>
+                        <div class="product-card">
+                            <div class="offer-sale">Offer-Sale!</div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/formal1.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Sports shoe single product</p>
+                            <p class="price"><span class="offer">$50</span>$40</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                        <p class="image-description">Formal shoe single product</p>
-                        <p class="price"><span class="offer">$60 </span>50$</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
+                        <div class="product-card">
+                            <div class="offer-sale"> Offer Sale! </div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/casual1.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Formal shoe single product</p>
+                            <p class="price"><span class="offer">$60 </span>50$</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/casual-shoe1.png" alt="Product Image" />
+                        <div class="product-card">
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/war1.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Casual shoe single product</p>
+                            <p class="price">$30</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                        <p class="image-description">Casual shoe single product</p>
-                        <p class="price">$30</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
+                        <div class="product-card">
+                            <div class="offer-sale">Offer-Sale!</div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/formal2.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Sports shoe single product</p>
+                            <p class="price"><span class="offer">$50</span>$40</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="offer-sale">Offer-Sale!</div>
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/sports-shoe2.png" alt="Product Image" />
+                        <div class="product-card">
+                            <div class="offer-sale"> Offer Sale! </div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/casual2.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Formal shoe single product</p>
+                            <p class="price"><span class="offer">$60 </span>50$</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                        <p class="image-description">Sports shoe single product</p>
-                        <p class="price"><span class="offer">$50</span>$40</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
+                        <div class="product-card">
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/war2.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Casual shoe single product</p>
+                            <p class="price">$30</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="offer-sale"> Offer Sale! </div>
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/formal-shoe2.png" alt="Product Image" />
+                        <div class="product-card">
+                            <div class="offer-sale">Offer-Sale!</div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/formal3.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Sports shoe single product</p>
+                            <p class="price"><span class="offer">$50</span>$40</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                        <p class="image-description">Formal shoe single product</p>
-                        <p class="price"><span class="offer">$60 </span>50$</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
+                        <div class="product-card">
+                            <div class="offer-sale"> Offer Sale! </div>
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/casual3.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Formal shoe single product</p>
+                            <p class="price"><span class="offer">$60 </span>50$</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/casual-shoe2.png" alt="Product Image" />
-                        </div>
-                        <p class="image-description">Casual shoe single product</p>
-                        <p class="price">$30</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="offer-sale">Offer-Sale!</div>
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/sports-shoe3.png" alt="Product Image" />
-                        </div>
-                        <p class="image-description">Sports shoe single product</p>
-                        <p class="price"><span class="offer">$50</span>$40</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="offer-sale"> Offer Sale! </div>
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/formal-shoe3.png" alt="Product Image" />
-                        </div>
-                        <p class="image-description">Formal shoe single product</p>
-                        <p class="price"><span class="offer">$60 </span>50$</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="image-container">
-                            <img class="product-image" src="assets/image/common/casual-shoe3.png" alt="Product Image" />
-                        </div>
-                        <p class="image-description">Casual shoe single product</p>
-                        <p class="price">$30</p>
-                        <div class="cart-button">
-                            <button class="add-to-cart">Add to Cart</button>
+                        <div class="product-card">
+                            <div class="image-container">
+                                <img class="product-image" src="assets/image/common/war3.png" alt="Product Image" />
+                            </div>
+                            <p class="image-description">Casual shoe single product</p>
+                            <p class="price">$30</p>
+                            <div class="cart-button">
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
