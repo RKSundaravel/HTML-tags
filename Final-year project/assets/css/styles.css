@@ -80,7 +80,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height:100%;
-    margin:0;
+    margin-top:0;
 }
 
 .sidenav {
@@ -104,24 +104,9 @@ header {
     color: #f1f1f1;
     background-color: #103369;
 }
-.button_container{
-    margin-left: 340px;
-}
-.tab-btn{
-    padding: 15px;
-    border: none;
-    width:49%;
-    font-size: 20px;
-    margin-top: 150px;
-}
-[data-tab-content]{
-    display:none;
-}
-.active[data-tab-content]{
-        display:block;
-}
+
 .content_container{
-    margin-top: 5px;
+    margin-top: 200px;
     margin-left:320px;
     width: 1030px;
 }
