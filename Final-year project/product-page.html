@@ -18,9 +18,16 @@ and open the template in the editor.
 <body>
     <header>
         <div class="h">
-            <p><img class="title" src="assets/image/logo/brand-logo.png">Men's Foot Wear
+            <p class="tit"><img class="title" src="assets/image/logo/brand-logo.png">Men's Foot Wear
                 <a class="cart" href=""><img src="assets/image/icons/cart.png"></a>
             </p>
+            <div class="logout_box">
+                <div class="logout_profile">
+                    <img class="profile_icon" src="assets/image/icons/profile_icon.png" alt="profile_icon">
+                    <h3>welcome,</h3>
+                </div>
+                <input class="logout_button" type="submit" value="logout">
+            </div>
         </div>
     </header>
     <main>
@@ -30,17 +37,11 @@ and open the template in the editor.
             <a href="file:///F:/my%20projects/HTML-tags-1/Final-year%20project/contact_us.html">Contact Us</a>
         </section>
         <div class="container">
-            
-            <div class="tab_container">
-                <input type="radio" name="slider" id="shoes">
-                <input type="radio" name="slider" id="slippers">
-                <nav class="button_container">
-                    <label class="tab-btn" data-tab-target="#shoes">SHOES</label>
-                    <label class="tab-btn" data-tab-target="#slippers">SLIPPERS</label>
-                </nav>
-
-                <div class="content_container">
-                    <div id="shoes" class="product-content" data-tab-content>
+            <div class="content_container_box">
+                <input type="radio" class="radio" name="slider" id="shoes" checked>
+                <label for="shoes" class="shoes label">SHOES</label>
+                <section class="content_container">
+                    <div class="product-content">
                         <div class="product-card">
                             <div class="offer-sale">Offer-Sale!</div>
                             <div class="image-container">
@@ -147,9 +148,12 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
+                </section>
 
-
-                    <div id="slippers" class="product-content" data-tab-content>
+                <input type="radio" class="radio" name="slider" id="slippers">
+                <label for="slippers" class="slippers label">SLIPPERS</label>
+                <section class="content_container">
+                    <div class="product-content">
                         <div class="product-card">
                             <div class="offer-sale">Offer-Sale!</div>
                             <div class="image-container">
@@ -247,7 +251,7 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </main>

@@ -50,7 +50,7 @@ header {
     background-color:#ffffff;
     width: 100%;
     margin-top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 .title{
     margin-left: 400px;
@@ -59,9 +59,12 @@ header {
     font-size: 30px;
     color: #0b3b0b;
     font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .cart{
-    margin-left: 200px;
+    margin-left: 100px;
 }
 .cart img{
     height: 75px;
@@ -72,15 +75,46 @@ header {
     background-color: #acacac;
 }
 .cart img:active{
-    background-color: #0061f2;
+    background-color: #084baf;
+}
+
+.logout_box{
+    margin-left: 50px;
+    margin-top: 10px;
+    border:1px solid #000000;
+    border-radius: 5px;
+    width:300px;
+    height: 120px;
+    font-size: 10px;
+    color: #000000;
+    box-shadow: 10px 10px 10px #00000066;
+}
+.logout_profile{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+.profile_icon{
+    height:50px;
+    width:50px;
+    padding: 10px;
+}
+.logout_button{
+    background-color: #103369;
+    color:#f1f1f1;
+    margin-top: 10px;
+    margin-left: 230px;
+    font-size: 15px;
+    border: none;
+    padding:5px;
+    border-radius: 5px;
 }
 
 .container {
     background-image: url("../../assets/image/banner/background-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height:100%;
-    margin-top:0;
+    margin-top: 0;
 }
 
 .sidenav {
@@ -105,16 +139,53 @@ header {
     background-color: #103369;
 }
 
-.content_container{
-    margin-top: 200px;
-    margin-left:320px;
+.content_container_box{
+    margin-left: 320px;
     width: 1030px;
+    display:flex;
+    flex-wrap: wrap;
 }
-.product-content{
+.label{
+    font-size: 20px;
+    font-weight: bold;
+    color:#000000;
+}
+.shoes{
+    margin-left: 100px;
+    padding-top: 180px;
+    padding-left: 0;
+    cursor:pointer;
+}
+.slippers{
+    padding-top: 180px;
+    margin-left: 50px;
+    cursor:pointer;
+}
+.radio{
+    display:none;
+}
+.content_container{
+    width:100%;
+    order:1;
+    border-bottom: #b7c7c7;
+    line-height: 1.5;
+    display: none;
+}
+.radio:checked + .label{
+    font-weight: bold;
+    color:#e2dcdc;
+    border-bottom: solid 3px #2e39b6;
+}
+.radio:checked + .label + .content_container{
+    display: initial;
+}
+
+ .product-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .product-card {
     margin: 10px;
     background-color: #ffffff;
@@ -122,7 +193,7 @@ header {
     height: 400px;
     position: relative;
     padding: 10px;
-    box-shadow: 0px 10px 10px #00000066;
+    box-shadow: 10px 10px 10px #00000066;
 }
 
 .offer-sale {
