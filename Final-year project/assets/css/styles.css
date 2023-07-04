@@ -114,7 +114,30 @@ header {
     background-image: url("../../assets/image/banner/background-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 0;
+}
+.about_background{
+    background-image: url("../../assets/image/banner/about_us.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+}
+
+.contact_background{
+    background-image: url("../../assets/image/banner/contact_us.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.statement{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #0000004f;
+    width: fit-content;
+    font-size: 50px;
+    color:#f4f5aa;
 }
 
 .sidenav {
@@ -152,12 +175,12 @@ header {
 }
 .shoes{
     margin-left: 100px;
-    padding-top: 180px;
+    padding-top: 160px;
     padding-left: 0;
     cursor:pointer;
 }
 .slippers{
-    padding-top: 180px;
+    padding-top: 160px;
     margin-left: 50px;
     cursor:pointer;
 }
